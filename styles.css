@@ -13,12 +13,23 @@ html {
    font-family: 'Roboto', sans-serif;
    font-size: 125%;
    color: #FFFFFF;
+   background-color: #815600;
 }
 
-h1, h2, h3  {
+h1, h2, h3, .read-more  {
    font-family: 'Petit Formal Script', cursive;
 }
 
+p {
+   font-weight: 100;
+   line-height: 29px;
+   letter-spacing: 0.2px;
+}
+
+h3 {
+   font-size: 2.25rem;  
+   text-align: right;
+}
 
 /* wrapper styling */
 
@@ -26,6 +37,10 @@ h1, h2, h3  {
    width: 95%;
    margin: 0 auto;
    max-width: 1080px;
+}
+
+a {
+   text-decoration: none;
 }
 
 /* removing default styling of lists */
@@ -41,7 +56,6 @@ ul {
 
 header {
    height: 100vh;
-   background-color: #815600;
 
 }
 
@@ -49,6 +63,7 @@ header {
    display: flex;  
    justify-content: space-around;
    align-items: center;
+   height: 100%;
 
 }
 
@@ -58,7 +73,6 @@ h1 {
    line-height: 94.3px;
    text-align: right;
    padding: 50px 50px;
-   /* height: auto; */
 }
  
 .header-photo img {
@@ -84,7 +98,7 @@ nav a {
 }
 
 .social-media ul {
-   position: fixed;
+   position: absolute;
    bottom: 0;
    right: 0;
 }
@@ -95,9 +109,61 @@ svg {
 }
 
 /* main */
-main {
-   background-color: #000;
+
+.about,
+.media,
+.contact {
+   background-color: #500801;
 }
-footer {
-   background-color: black;
+
+h2 {
+   font-size: 2.7rem;
 }
+
+.read-more {
+   display: inline-block;
+   font-size: 1.25rem;
+   text-align: center;
+   line-height: 29px;
+   color: white;
+   background-color: #1D0303;
+   padding: 10px 20px;
+
+}
+
+
+/* section 1 About */
+
+
+.about .wrapper {
+   display: flex;
+   padding: 60px 0;
+   justify-content: space-between;
+   align-items: flex-start;
+   justify-content: baseline;
+
+}
+
+
+.about .text-container {
+   flex-basis: 70%;
+}
+
+
+.square {
+   width: 300px;
+   height: 300px;
+   object-fit: cover;
+}
+
+.about p {
+   margin-bottom: 50px;
+}
+
+.about h2 {
+   margin-top: 0;
+}
+
+/* section 2 gallery  */
+
+
