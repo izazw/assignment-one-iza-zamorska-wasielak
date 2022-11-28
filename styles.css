@@ -79,15 +79,34 @@ h1 {
    text-align: right;
    padding: 50px 50px;
 }
- 
+
 .header-photo img {
    width: 100%;
    height: auto;
 }
 
+/* header mobile size */
 
 @media (max-width: 480px) {
+   .header-divs {
+      flex-direction: column;
+   }
+
    
+   h1 {
+      font-size: 2.5rem;
+      text-align: right;
+      font-weight: 100;
+      padding: 10px 0;
+      margin-bottom: 5px;
+      margin-top: 5px;
+   }
+
+   .header-photo img {
+      position: relative;
+      left: -40px;
+      bottom: 20px;
+   }
 }
 /* navigation */
 
@@ -106,6 +125,11 @@ nav a {
    margin: 0 10px;
 }
 
+   /* navigation mobile seize */
+
+
+/* social media links  */
+
 .social-media ul {
    position: absolute;
    bottom: 0;
@@ -116,6 +140,15 @@ svg {
    display: inline-block;
    margin: 10px 20px;
 }
+
+
+/* social media mobile seize */
+@media (max-width: 480px) {
+   .social-media {
+      display: none;
+   }
+}
+
 
 /* main */
 
